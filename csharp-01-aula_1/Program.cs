@@ -1,8 +1,13 @@
 ﻿// Screen Sound
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound!";
+<<<<<<< HEAD
 List<string> listaDasBandas = new List<string>{"matue", "oroch", "mc pedrinho"};
 
 void ExibirLogo()
+=======
+
+void ExibirMensagem()
+>>>>>>> d0f8f00618919b5547a5a65ac584ff3545987839
 {
     Console.WriteLine(@"
 ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
@@ -17,7 +22,10 @@ void ExibirLogo()
 
 void ExibirOpcoesDoMenu()
 {
+<<<<<<< HEAD
     ExibirLogo();
+=======
+>>>>>>> d0f8f00618919b5547a5a65ac584ff3545987839
     Console.WriteLine("\nDigite 1 para registrar uma banda");
     Console.WriteLine("Digite 2 para mostrar todas as bandas");
     Console.Write("Digite 3 para avaliar uma banda");
@@ -30,9 +38,15 @@ void ExibirOpcoesDoMenu()
 
     switch (opcaoEscolhidaNumerica)
     {
+<<<<<<< HEAD
         case 1: RegistrarBanda();
             break;
         case 2: MostrarBandasRegistradas();
+=======
+        case 1: Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 2: Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+>>>>>>> d0f8f00618919b5547a5a65ac584ff3545987839
             break;
         case 3: Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
             break;
@@ -45,6 +59,7 @@ void ExibirOpcoesDoMenu()
     }   
 }
 
+<<<<<<< HEAD
 void RegistrarBanda()
 {
     Console.Clear();
@@ -82,4 +97,7 @@ void MostrarBandasRegistradas()
     ExibirOpcoesDoMenu();
 }
 
+=======
+ExibirMensagem();
+>>>>>>> d0f8f00618919b5547a5a65ac584ff3545987839
 ExibirOpcoesDoMenu();
