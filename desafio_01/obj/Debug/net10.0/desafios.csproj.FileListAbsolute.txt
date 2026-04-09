@@ -1,0 +1,4 @@
+C:\Users\lucas\Documents\Alura\csharp-01-aula_1\desafio_01\obj\Debug\net10.0\desafios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\Documents\Alura\csharp-01-aula_1\desafio_01\obj\Debug\net10.0\desafios.AssemblyInfoInputs.cache
+C:\Users\lucas\Documents\Alura\csharp-01-aula_1\desafio_01\obj\Debug\net10.0\desafios.AssemblyInfo.cs
+C:\Users\lucas\Documents\Alura\csharp-01-aula_1\desafio_01\obj\Debug\net10.0\desafios.csproj.CoreCompileInputs.cache
