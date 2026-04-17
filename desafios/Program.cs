@@ -1,5 +1,7 @@
+﻿using System.Diagnostics.CodeAnalysis;
+
 static void CalcularMedia()
-    {
+{
     Console.WriteLine("Digite a primeira nota: ");
     int nota1 = int.Parse(Console.ReadLine());
 
@@ -11,22 +13,20 @@ static void CalcularMedia()
 
     Console.WriteLine("A média das suas notas são: " + media);
 }
-CalcularMedia();
 
 
-static void lista()
+static void Lista()
 {
-    String[] linguagens = {"Java", "javascript", "C#"};
+    String[] linguagens = { "Java", "javascript", "C#" };
 
     foreach (String linguagem in linguagens)
     {
         Console.WriteLine(linguagem);
     }
 }
-lista();
 
 
-static void calculadora()
+static void Calculadora()
 {
     Console.WriteLine("-----MENU-----");
     Console.WriteLine("Digite a opçao que deseja executar: ");
@@ -37,7 +37,7 @@ static void calculadora()
     Console.WriteLine("5 - sair");
     int opcao = int.Parse(Console.ReadLine());
 
-    if(opcao == 1)
+    if (opcao == 1)
     {
         Console.Write("Escreva o primeiro numero: ");
         double numero1 = double.Parse(Console.ReadLine());
@@ -49,7 +49,7 @@ static void calculadora()
 
         Console.WriteLine("O resultado da operação é: " + resultado);
     }
-    else if(opcao == 2)
+    else if (opcao == 2)
     {
         Console.Write("Escreva o primeiro numero: ");
         double numero1 = double.Parse(Console.ReadLine());
@@ -61,7 +61,7 @@ static void calculadora()
 
         Console.WriteLine("O resultado da operação é: " + resultado);
     }
-    else if(opcao == 3)
+    else if (opcao == 3)
     {
         Console.Write("Escreva o primeiro numero: ");
         double numero1 = double.Parse(Console.ReadLine());
@@ -73,7 +73,7 @@ static void calculadora()
 
         Console.WriteLine("O resultado da operação é: " + resultado);
     }
-    else if(opcao == 4)
+    else if (opcao == 4)
     {
         Console.Write("Escreva o primeiro numero: ");
         double numero1 = double.Parse(Console.ReadLine());
@@ -81,7 +81,7 @@ static void calculadora()
         Console.Write("Escreva o primeiro numero: ");
         double numero2 = double.Parse(Console.ReadLine());
 
-        if(numero2 == 0)
+        if (numero2 == 0)
         {
             Console.WriteLine("Não é possível dividir um número por 0");
         }
@@ -90,9 +90,9 @@ static void calculadora()
             double resultado = numero1 / numero2;
 
             Console.WriteLine("O resultado da operação é: " + resultado);
-        }  
+        }
     }
-    else if(opcao == 5)
+    else if (opcao == 5)
     {
         Console.WriteLine("Você encerrou o programa!");
         return;
@@ -102,4 +102,29 @@ static void calculadora()
         Console.WriteLine("Escreva uma opção válida!");
     }
 }
-calculadora();
+
+
+void MediaAluno()
+{
+   Dictionary<string, List<double>> alunos = new Dictionary<string, List<double>>();
+
+    string nomeAluno = "Lucas";
+    alunos.Add(nomeAluno, new List<double> {10, 9, 10});
+
+    if(alunos.ContainsKey(nomeAluno))
+    {
+        List<double> notas = alunos[nomeAluno];
+
+        double soma = 0;
+
+        foreach (double nota in notas)
+        {
+            soma = soma + nota;
+        }
+
+        double media = soma / notas.Count;
+
+        Console.WriteLine($"A média do aluno {nomeAluno} é: {media:F2}");
+    }
+}
+MediaAluno();
